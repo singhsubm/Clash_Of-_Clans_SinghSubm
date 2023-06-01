@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="r.jpeg">
+    <title>Clash Of Clans</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Logo.png" class="logo">
+            <nav>
+                <ul id="menu_list">
+                    <li class="list_items" id="About"><a href="#">About</a></li>
+                    <li class="list_items" id="Gold"><a href="#">Gold</a></li>
+                    <li class="list_items" id="Elixer"><a href="#">Elixer</a></li>
+                    <li class="list_items" id="Dark_Elixer"><a href="#">Dark Elixer</a></li>
+                    <li class="list_items" id="Gems"><a href="#">Gems</a></li>
+                </ul>
+            </nav>
+            <img src="menu_icon.png" class="menu_icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Clash Of Clans</h2>
+                <h3>Build your Thinking</h3>
+                <p>Lead your clan to Victory. Customize your village, build an army and crush your opponents.</p>
+                <h4>$32.50</h4>
+                <button><span> Download Now</span><img src="arrow.png" class="arrow"></button>
+            </div>
+            <div class="col-2">
+                <img src="Character.png" class="Character">
+                <div class="color-box"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menu_list = document.getElementById("menu_list")
+        menu_list.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menu_list.style.maxHeight == "0px")
+            {
+                menu_list.style.maxHeight = "130px";
+            }
+            else
+            {
+                menu_list.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
